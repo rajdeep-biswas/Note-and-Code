@@ -10,6 +10,8 @@ class Solution:
 
             # checking if said letter occurs at each the desired index for each string (besides the first one)
             for st in strs[1:]:
+
+                # checking each string shouldn't go beyond it's actual length in order to avoid a out of bounds index.
                 if i >= len(st) or st[i] != base[i]:
                     found = False
 
