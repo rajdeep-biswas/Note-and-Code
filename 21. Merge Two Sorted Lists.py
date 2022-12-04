@@ -28,4 +28,5 @@ class Solution:
         if list2:
             newL.next = list2
 
+        # return list from head's next since head is an empty node
         return head.next
