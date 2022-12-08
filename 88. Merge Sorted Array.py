@@ -1,6 +1,10 @@
 class Solution:
     """
     Lookback.
+    https://www.youtube.com/watch?v=P1Ic85RarKY
+    https://www.youtube.com/watch?v=FyzWXlSMNoI
+    https://www.youtube.com/watch?v=73lyz0EZye8
+    https://www.youtube.com/watch?v=C4oBXLr3zos
     """
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
 
