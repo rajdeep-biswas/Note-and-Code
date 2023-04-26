@@ -8,3 +8,11 @@
 
 #### 25th April
 /Python: Using `defaultdict()` instead of `dict()` lets you avoid a check during populating keys via iteration.
+
+#### 26th April
+/Python: You shouldn't use the following syntax in Python if you intend to populate the sublist items independently.
+```python
+count = [[]] * len(arr)
+```
+That would create copies of the nested item, and any changes you make to it would reflect across all the other copies.
+[Explanation is provided in this stackoverflow](https://stackoverflow.com/questions/240178/list-of-lists-changes-reflected-across-sublists-unexpectedly).
