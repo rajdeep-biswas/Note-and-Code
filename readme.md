@@ -14,5 +14,5 @@
 ```python
 count = [[]] * len(arr)
 ```
-That would create copies of the nested item, and any changes you make to it would reflect across all the other copies.
+That would create copies of the nested item, **only as long as the sublist item type is mutable**, and any changes you make to it would reflect across all the other copies.
 [Explanation is provided in this stackoverflow](https://stackoverflow.com/questions/240178/list-of-lists-changes-reflected-across-sublists-unexpectedly).
