@@ -1,6 +1,9 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
 
+        # the neetcode guy did mention a (less efficient) solution with heapify - which might be a concept i'd want to learn sooner or later
+        # https://www.youtube.com/watch?v=YPTqKIgVk-k
+
         # conventional frequency hashmap
         freq_dict = dict()
         for num in nums:
