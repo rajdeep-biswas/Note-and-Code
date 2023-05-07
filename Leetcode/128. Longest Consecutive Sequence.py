@@ -1,5 +1,7 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+
+        # note that if you initialize longest and length variables to 0, instead of the assumption of minimum length of 1, you will pass all testcases without this check
         if not nums:
             return 0
 
