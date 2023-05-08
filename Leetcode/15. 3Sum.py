@@ -10,6 +10,7 @@ class Solution:
         # do this for each element
 
         while i < len(sorted_nums):
+            # some cleverness to avoid entering duplicates into results
             if i > 0 and sorted_nums[i] == sorted_nums[i - 1]:
                 i += 1
                 continue
