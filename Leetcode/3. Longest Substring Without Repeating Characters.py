@@ -2,7 +2,7 @@ class Solution(object):
     def lengthOfLongestSubstring(self, s):
         if not s:
             return 0
-        longest, longer = 1, 1
+        longest, longer = 0, 0
         l, r = 0, 0
         cur = set()
         while r < len(s):
@@ -13,10 +13,10 @@ class Solution(object):
                 r += 1
             else:
                 longest = max(longest, longer)
-                longer = 1
+                longer = 0
                 cur = set()
                 l += 1
                 r = l
 
         longest = max(longest, longer)
-        return longest - 1
+        return longest
