@@ -11,6 +11,8 @@ class Solution:
             counts = {}
             for i in range(l, r + 1):
                 counts[s[i]] = 1 + counts.get(s[i], 0)
+
+            # do note that replacing above snippet with Counter(s[l: r + 1]), does fast-en the code to 31/38. hacky as it is, while doesnt even deliver
             max_count = max(counts.values())
 
             # print(l, r, s[l:r + 1], max_count, k, r - l - max_count < k, counts)
