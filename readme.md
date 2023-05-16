@@ -19,3 +19,6 @@ That would create copies of the nested item, **only as long as the sublist item 
 
 #### 7th May
 /DSA: Once you have solved 1. Two Sum and 167. Two Sum II, you can draw the intuition for 15. 3Sum, that you can sort the array first and then use one element as anchor to find the remaining to elements via a two-pointer approach.
+
+#### 16th May
+/Python: Usage of collections.Counter to easily get a frequency map of all elements in a list or string.
