@@ -4,6 +4,8 @@ class Solution:
         max_found = 0
         counts = {}
 
+        # the central improvement in this solution lies in the fact that you don't have to re-iterate over each subsequence to get the counts
+        # but you can simply use the sliding window to "update" your counts on the go, since every new l/r movement can only increase (or decrease) the count of only one alphabet at a time
         while r < len(s):
             # this is the delta from my non-solution, update the count dict as you go and decrement it at the else condition
             counts[s[r]] = 1 + counts.get(s[r], 0)
