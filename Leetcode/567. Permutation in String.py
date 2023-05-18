@@ -20,8 +20,8 @@ class Solution:
 
             # get charater frequency of second string but only from l to r, which is the window length based on the first string
             char_count_s2 = {}
-            for char in s2[l:r]:
-                char_count_s2[char] = 1 + char_count_s2.get(char, 0)
+            for i in range(l, r):
+                char_count_s2[s2[i]] = 1 + char_count_s2.get(s2[i], 0)
 
             # sanity check
             if len(char_count_s1) != len(char_count_s2):
