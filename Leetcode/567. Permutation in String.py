@@ -2,6 +2,12 @@ class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
 
         # i will try my best to explain the thought process
+        # update: turns out it's actually pretty close to neetcode's O(26.n) solution, so I am gonna keep this one for now and not upgrade to the _slight_ improvement
+
+        # sanity check
+        if len(s1) > len(s2):
+            return False
+
         char_count_s1 = {}
 
         # get frequencies of characters of the first string
@@ -9,10 +15,6 @@ class Solution:
             char_count_s1[char] = 1 + char_count_s1.get(char, 0)
         flag = True
         l, r = 0, len(s1)
-
-        # sanity check
-        if len(s1) > len(s2):
-            return False
 
         while r < len(s2) + 1:
             # assume flag to be true every iteration
