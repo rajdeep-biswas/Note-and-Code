@@ -22,3 +22,21 @@ That would create copies of the nested item, **only as long as the sublist item 
 
 #### 16th May
 /Python: Usage of collections.Counter to easily get a frequency map of all elements in a list or string.
+
+#### 30th May
+/DSA: BFS uses a Queue. DFS uses a Stack.
+In Python, the difference can be achieved with using `queue.insert(0, (r, c))` and `stack.append((r, c))`, paired with `.pop()`.
+
+```c
+# Stack push -
+stack.append((r, c))
+
+# Stack pop -
+r, c = stack.pop()
+
+# Enqueue -
+queue.insert(0, (r, c))
+
+# Dequeue -
+r, c = queue.pop()
+```
