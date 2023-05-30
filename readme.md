@@ -25,7 +25,7 @@ That would create copies of the nested item, **only as long as the sublist item 
 
 #### 30th May
 /DSA: BFS uses a Queue. DFS uses a Stack.
-In Python, the difference can be achieved with using `queue.insert(0, (r, c))` and `stack.append((r, c))`, paired with `.pop()`.
+In Python, the difference can be achieved by using `queue.insert(0, (r, c))` and `stack.append((r, c))`, paired with `.pop()`.
 
 ```c
 # Stack push -
