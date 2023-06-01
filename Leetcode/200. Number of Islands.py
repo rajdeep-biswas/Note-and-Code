@@ -14,6 +14,7 @@ class Solution:
         q = []
         q.insert(0, (r, c)) # queue, if you're going for BFS
         # q.append((r, c)) # stack, if you're going for DFS
+        self.visited.add((r, c))
         while q:
             r, c = q.pop()
             for dr, dc in self.directions:
@@ -37,6 +38,5 @@ class Solution:
                 # if current block is land ('1') and hasn't already been visited, by loop for by D/BFS, count it as a new island and add it to visited, then dfs on it to explore all of the island
                 if grid[r][c] == '1' and (r, c) not in self.visited:
                     count += 1
-                    self.visited.add((r, c))
                     self.dfs(grid, r, c)
         return count

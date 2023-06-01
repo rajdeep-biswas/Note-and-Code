@@ -16,6 +16,7 @@ class Solution:
         count = 1
         q = []
         q.insert(0, (r, c))
+        self.visited.add((r, c))
 
         while q:
             r, c = q.pop()
@@ -41,6 +42,5 @@ class Solution:
         for r in range(len(grid)):
             for c in range(len(grid[0])):
                 if grid[r][c] == 1 and (r, c) not in self.visited:
-                    self.visited.add((r, c))
                     self.dfs(grid, r, c)
         return self.max_count
