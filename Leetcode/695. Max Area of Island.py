@@ -3,13 +3,11 @@ class Solution:
     # this solution is very similar to (200. Number of Island), refer to that solution if the code does not make sense
 
     visited = None
-    dfs_trav = None
     max_count = None
     directions = [[0, 1], [0, -1], [1, 0], [-1, 0]]
 
     def __init__(self):
         self.visited = set()
-        self.dfs_trav = []
         self.max_count = 0
 
     def dfs(self, grid, r, c):
