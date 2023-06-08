@@ -1,7 +1,7 @@
 Algorithm -
 - initiate empty `queue`.
 - `enqueue` initial coordinates.
-- add coordinates to `visited` set.
+- add coordinates to `visited` set. (note that this step may seem redundant as these coordinates will eventually get covered on line 15, but for some usecases, an additional iteration might "count" things incorrectly.)
 - while `queue` is not empty:
      - `dequeue` and store coordinates (r, c).
      - `for each direction`

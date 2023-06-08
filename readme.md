@@ -40,3 +40,6 @@ queue.insert(0, (r, c))
 # Dequeue -
 r, c = queue.pop()
 ```
+
+#### 8th June
+/DSA: Learned an important detail about standard BFS implementation; recorded in `Python/standard_bfs.md`.
