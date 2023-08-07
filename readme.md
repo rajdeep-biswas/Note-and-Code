@@ -43,3 +43,7 @@ r, c = queue.pop()
 
 #### 8th June
 /DSA: Learned an important detail about standard BFS implementation; recorded in `Python/standard_bfs.md`.
+
+#### 7th August
+/Python: You can sort a list of Objects by the attributes via using the key parameter along with a `lambda` function.  
+[Stackoverflow explanation](https://stackoverflow.com/questions/403421/how-do-i-sort-a-list-of-objects-based-on-an-attribute-of-the-objects).
