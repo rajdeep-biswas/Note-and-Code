@@ -47,3 +47,7 @@ r, c = queue.pop()
 #### 7th August
 /Python: You can sort a list of Objects by the attributes via using the key parameter along with a `lambda` function.  
 [Stackoverflow explanation](https://stackoverflow.com/questions/403421/how-do-i-sort-a-list-of-objects-based-on-an-attribute-of-the-objects).
+
+#### 12th August
+/DSA. Quick TIL: In case of a sorted array, if you're trying to insert a new element (while maintaining sorted order, of course), while you can identify the appropriate index at O(logn) via binary search, however, actually inserting the element into said position will be O(n) since you'll have to move over all the following elements.  
+The latter wasn't making sense why shouldn't it be O(logn) as well? (originating from Neetcode's heap usage [perfectly timestamped here!](https://youtu.be/hOjcdrqMoQ8?t=159).), and then it quickly clicked why inserting is a significantly different operation compared to identifying the index.
