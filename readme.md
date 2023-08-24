@@ -51,3 +51,6 @@ r, c = queue.pop()
 #### 12th August
 /DSA. Quick TIL: In case of a sorted array, if you're trying to insert a new element (while maintaining sorted order, of course), while you can identify the appropriate index at O(logn) via binary search, however, actually inserting the element into said position will be O(n) since you'll have to move over all the following elements.  
 The latter wasn't making sense why shouldn't it be O(logn) as well? (originating from Neetcode's heap usage [perfectly timestamped here!](https://youtu.be/hOjcdrqMoQ8?t=159).), and then it quickly clicked why inserting is a significantly different operation compared to identifying the index.
+
+#### 25th August
+/Leetcode: The `Editorial` section on any problem (free for most problems, I guess?) is actually the "Official Solution(s)" section and often the best place to start.
