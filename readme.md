@@ -53,4 +53,5 @@ r, c = queue.pop()
 The latter wasn't making sense why shouldn't it be O(logn) as well? (originating from Neetcode's heap usage [perfectly timestamped here!](https://youtu.be/hOjcdrqMoQ8?t=159).), and then it quickly clicked why inserting is a significantly different operation compared to identifying the index.
 
 #### 25th August
-/Leetcode: The `Editorial` section on any problem (free for most problems, I guess?) is actually the "Official Solution(s)" section and often the best place to start.
+/Leetcode: The `Editorial` section on any problem (free for most problems, I guess?) is actually the "Official Solution(s)" section and often the best place to start.  
+For example, each of [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/editorial) and [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/editorial) solutions were progressively intuitive and really well documented.
