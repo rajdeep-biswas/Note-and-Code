@@ -2,6 +2,7 @@ class Solution:
 
     # update: I looked at Neetcode (youtube.com/watch?v=ZGxqqjljpUI)'s solution and agreeing to the comments there, it doesn't really make a lot of intuitive sense. I also disagree wiht the guy that it's actually a Medium problem, it is correctly placed at Easy.
     # The commenters also led me to the Leetcode editorial (leetcode.com/problems/can-place-flowers/editorial) solution, and I am delighted to note that it's similar in spirit to my solution, after I made some meaningful changes to it, documented below.
+    # (I read through an in-depth comparison via ChatGPT, which only recommends the editorial solution for readability, otherwise they're doing the exact same thing condition-wise)
 
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         count = 0
