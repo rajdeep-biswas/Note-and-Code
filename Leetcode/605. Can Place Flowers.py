@@ -10,7 +10,7 @@ class Solution:
 
         for i in range(len(flowerbed)):
 
-            # I had to move this if condition to the top to take care of not running into a runtime index out of bounds error
+            # I had to move the first if condition to the top to take care of not running into a runtime index out of bounds error
             # it is super important that the three conditions appear in this order, and this order only.
             # for example, with the testcase {flowerbed = [0], n = 1}, the last bit flowerbed[i - 1] only works in a Pythonic way because of flowerbed[-1] resulting into the last index. this cannot work with flowerbed[i + 1], and that is how the edgecases involving len(flowerbed) == 1 are handled
             # I would recommend following the editorial solution for a more language-agnostic solution
