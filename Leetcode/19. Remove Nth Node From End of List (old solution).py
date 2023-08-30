@@ -9,10 +9,10 @@ class Solution:
     # Trying to read it, looks like I am doing multiple passes
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
 
-        # The first pass is to count the number of nodes on the list
-        count = 1
+        # The first pass is to count the number of nodes on the list. note that i improved the readability of this
+        count = 0
         temp = head
-        while temp.next:
+        while temp:
             temp = temp.next
             count += 1
 
