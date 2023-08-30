@@ -12,6 +12,7 @@ class Solution:
         slow = head
         fast = head.next
 
+        # apparently there is a slightly more elegant way to write slow and fast pointers, check out https://www.youtube.com/watch?v=S5bfdUTrKLM
         while fast and fast.next:
             if fast.next and fast.next.next:
                 fast = fast.next.next
