@@ -6,7 +6,7 @@
 class Solution:
 
     # note that the same solution with O(n) space and O(n) time, but much easier, can be achieved by simply creating a normal list and reversing that instead of making a copy of the entire linkedlist
-    # but since web searches have a distinct lack of this intuitive solution (which I got by questioning ChatGPT a bunch), I chose to put this up on my repo
+    # but since web searches have a distinct lack of an intuitive linkedlist deep copy solution (which I got by questioning ChatGPT a bunch), I chose to put this up on my repo
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
 
         # taking backup of the original linkedlist, this was way harder than it comes off as
