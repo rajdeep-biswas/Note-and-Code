@@ -44,4 +44,6 @@ class Solution:
             left = leftnext
             right = rightnext
 
-        # PS: I understood Neetcode's solution and implemented it and it works. But I have no idea why my version works. For lists wth odd number of elements, the last element is supposed to get into a self-loop (I dry ran it twice) but running the code shows there are no cycles in the list. I am very confused
+        # PS: I understood Neetcode's solution and implemented it and it works. But I have no idea why my version works.
+        # For lists wth odd number of elements, the last element is supposed to get into a self-loop (I dry ran it twice) but running the code shows there are no cycles in the list. I am very confused
+        # Update: I am not confused anymore, while line 41 does introduce a self-loop, line 42 again sets the next pointer to leftnext which has become null by now
