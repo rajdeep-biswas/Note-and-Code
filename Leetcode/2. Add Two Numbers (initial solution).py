@@ -9,6 +9,7 @@ class Solution:
     According to leetcode, this is my third sitting with this problem. I had the first session in June 2021 which has an accepted solution but hacky stuff like converting to a python list (clean af modularized code though, gotta give it that).
     The second sitting was in February 2022 where I have written this unreadable monstrosity solution that doesn't even work (1341 / 1568 testcases passed), I didn't even try to read it.
     This third attempt came pretty naturally to me; O(len(l1) + len(l2)) time and O(max(len(l1), len(l2))) space. Still gonna check out Neetcode's
+    Update: neetcode does have a slightly shorter solution by using a single loop (although it's still the same time and space complexity as mine) but personally, I didn't find the conditioning within it very elegant / readable.
     """
 
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
