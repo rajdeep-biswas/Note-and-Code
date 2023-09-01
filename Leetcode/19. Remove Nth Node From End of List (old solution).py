@@ -19,7 +19,7 @@ class Solution:
         # The second pass to traverse until we get to the (n + 1)th element, because 0-indexing?
         # so either n is the same as the length of the list or lesser, whichever we reach first, that is the element we need to get rid of
         temp = head
-        while temp and count > n + 1:
+        while temp and count > n + 1: # count starts from the length of array reduces to n + 1; which is the node *before* the one we want to get rid of
             temp = temp.next
             count -= 1 # Counting down to know when to stop
 
