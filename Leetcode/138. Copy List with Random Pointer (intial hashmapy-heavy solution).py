@@ -42,7 +42,7 @@ class Solution:
         position = 0
 
         while trav:
-            original_random[position] = original_position[trav.random] if trav.random else None
+            original_random[position] = original_position[trav.random] if trav.random else None # the random pointer is totally free to point at null (think of the bit that is being pointed to, by the last node), so this conditional is necessary
             trav = trav.next
             position += 1
 
@@ -79,7 +79,7 @@ class Solution:
             # this refers to original_random hashmap to figure out which position's random points to which position,
             # and uses the index of the latter from copy_position_inv to point it to the right object
             # tedious but clever imo, gotta check out neetcode's solution
-            ctrav.random = copy_position_inv[original_random[position]] if original_random[position] != None else None
+            ctrav.random = copy_position_inv[original_random[position]] if original_random[position] != None else None # check line 45 if the conditional isn't making sense
             ctrav = ctrav.next
             position += 1
 
