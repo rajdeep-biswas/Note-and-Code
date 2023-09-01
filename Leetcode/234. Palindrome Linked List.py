@@ -9,7 +9,7 @@ class Solution:
     # but since web searches have a distinct lack of an intuitive linkedlist deep copy solution (which I got by questioning ChatGPT a bunch), I chose to put this up on my repo
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
 
-        # taking backup of the original linkedlist, this was way harder than it comes off as
+        # taking backup of the original linkedlist, making a deep copy of a linked list is way harder than it comes off as
         # committing this solution to my repo solely to take note of lines 11 to 18
         backup = ListNode(head.val)
         btrav = backup
