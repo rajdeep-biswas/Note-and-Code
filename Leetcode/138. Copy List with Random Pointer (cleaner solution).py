@@ -17,7 +17,7 @@ class Solution:
 
         node_hash = {} # PS: it can be pretty elegant to initialize as node_hash = {None: None} if you want to avoid the conditional at line 44
 
-        # first iteration / pass through the list to create a basic deep copy (without 
+        # first iteration / pass through the list to create a basic deep copy (just with the values and nexts, ignoring the randoms since some random pointers might point to nodes that haven't been populated yet)
         copy_head = Node(head.val)
         ctrav = copy_head
         trav = head
