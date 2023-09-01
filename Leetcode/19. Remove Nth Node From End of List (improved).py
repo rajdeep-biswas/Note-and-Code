@@ -6,6 +6,7 @@
 class Solution:
 
     # now this isn't exactly one-pass but a two-pass solution and it uses a dummy node, which might be inelegant (youtube.com/watch?v=XVuQxVej6y8)
+    # update: in retrospect, my solution isn't too bad compared to this. while a two-pointer approach is valuable to know, the time complexity remains the same.
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
 
         # dummy node points to the head of Node. this only takes care of edge cases where the list size is 1
