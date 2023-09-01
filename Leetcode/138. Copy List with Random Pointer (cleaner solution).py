@@ -15,7 +15,7 @@ class Solution:
         if not head:
             return head
 
-        node_hash = {}
+        node_hash = {} # PS: it can be pretty elegant to initialize as node_hash = {None: None} if you want to avoid the conditional at line 44
 
         # first iteration / pass through the list to create a basic deep copy (without 
         copy_head = Node(head.val)
