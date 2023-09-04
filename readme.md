@@ -57,4 +57,6 @@ The latter wasn't making sense why shouldn't it be O(logn) as well? (originating
 For example, each of [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/editorial) and [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/editorial) solutions were progressively intuitive and really well documented.
 
 #### 4th September
-/DSA Tip: In your [DSA Map Excel](https://docs.google.com/spreadsheets/d/15YePlUbNrcXYa6QndV0GTpUwqDhjNEpUzbQ9aUKaj2U/edit#gid=0) group problems that have similar solution patterns together, like [Neetcode mentions in his video](https://youtu.be/SVvr3ZjtjI8?si=K5zkXYLz70Mh-8Dh&t=270), DP problems have similar patterns, multiple tree problems use (recursive) BFS, etc.
+/DSA Tip: In your [DSA Map Excel](https://docs.google.com/spreadsheets/d/15YePlUbNrcXYa6QndV0GTpUwqDhjNEpUzbQ9aUKaj2U/edit#gid=0) group problems that have similar solution patterns together, like [Neetcode mentions in his video](https://youtu.be/SVvr3ZjtjI8?si=K5zkXYLz70Mh-8Dh&t=270), DP problems have similar patterns, multiple tree problems use (recursive) BFS, etc.  
+  
+Also, just had this feeling that DFS is similar in nature to a pre-order traversal, [which is indeed true](https://softwareengineering.stackexchange.com/questions/227779/is-pre-order-traversal-same-as-depth-first-search), just that "traversal" and "search" have different purposes.
