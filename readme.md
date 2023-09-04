@@ -55,3 +55,6 @@ The latter wasn't making sense why shouldn't it be O(logn) as well? (originating
 #### 25th August
 /Leetcode: The `Editorial` section on any problem (free for most problems, I guess?) is actually the "Official Solution(s)" section and often the best place to start.  
 For example, each of [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/editorial) and [Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/editorial) solutions were progressively intuitive and really well documented.
+
+#### 4th September
+/DSA Tip: In your [DSA Map Excel](https://docs.google.com/spreadsheets/d/15YePlUbNrcXYa6QndV0GTpUwqDhjNEpUzbQ9aUKaj2U/edit#gid=0) group problems that have similar solution patterns together, like [Neetcode mentions in his video](https://youtu.be/SVvr3ZjtjI8?si=K5zkXYLz70Mh-8Dh&t=270), DP problems have similar patterns, multiple tree problems use (recursive) BFS, etc.
