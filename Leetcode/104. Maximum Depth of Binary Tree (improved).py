@@ -6,14 +6,10 @@
 #         self.right = right
 class Solution:
 
-    # this is a debug console log commit that I use to verify my dry runs, will overwrite with a proper commit
+    # another recursive BFS solution
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
-            print("nothing found returning 0")
             return 0
-        print("going left", root.left.val if root.left else None)
-        max_left = self.maxDepth(root.left)
-        print("going right", root.right.val if root.right else None)
-        max_right = self.maxDepth(root.right)
-        print("returning 1 +", max(max_left, max_right), "from", root.val)
-        return 1 + max(max_left, max_right)
+
+        # idea is intuitive to me only once I have seen, dry ran and understood the solution once. debug log is there in previous commit of this file
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
