@@ -7,6 +7,7 @@
 class Solution:
 
     # another recursive BFS solution
+    # Neetcode shows multiple other solutions like iterative BFS and iterative DFS (youtube.com/watch?v=hTM3phVI6YQ), might be worth checking out sometime soon
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         if not root:
             return 0
