@@ -26,3 +26,8 @@ class Solution:
 
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         return self.dfs(p, q)
+
+        """
+        PS: If I read the provided parameters properly, this could have been solved by doing recursion on the isSameTree method itself.
+        I should be looking at these little things better.
+        """
