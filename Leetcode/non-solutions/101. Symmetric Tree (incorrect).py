@@ -43,3 +43,5 @@ class Solution:
 
         # check if the left list is 1:1 same as the reversed (mirrored) right list. again, it fails edge cases where the tree isn't symmetric but the leaf values are same as in above example
         return self.left_inorder == self.right_inorder[::-1]
+
+        # I was explaining this issue to Ara and was rubber ducky-ing the approach of passing in some additional information besides just the values of the nodes for comparison and she suggested recording whether a Node is a "left" or "right" child along with the value which indeed works! just isn't a very elegant solution
