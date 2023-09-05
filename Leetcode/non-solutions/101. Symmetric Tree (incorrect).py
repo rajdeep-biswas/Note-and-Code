@@ -22,6 +22,7 @@ class Solution:
     left_inorder = []
     right_inorder = []
 
+    # standard recursive inorder traversal of left, root, right
     def inorder(self, root, populate):
         if not root:
             populate.append(None)
@@ -31,11 +32,14 @@ class Solution:
         self.inorder(root.right, populate)
 
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+
+        # reset values for leetcode "caching"
         self.left_inorder = []
         self.right_inorder = []
-        
+
+        # populate left and right lists
         self.inorder(root.left, self.left_inorder)
         self.inorder(root.right, self.right_inorder)
-        
-        print(self.left_inorder, self.right_inorder)
+
+        # check if the left list is 1:1 same as the reversed (mirrored) right list. again, it fails edge cases where the tree isn't symmetric but the leaf values are same as in above example
         return self.left_inorder == self.right_inorder[::-1]
