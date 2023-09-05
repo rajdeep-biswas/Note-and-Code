@@ -60,3 +60,9 @@ For example, each of [Can Place Flowers](https://leetcode.com/problems/can-place
 /DSA Tip: In your [DSA Map Excel](https://docs.google.com/spreadsheets/d/15YePlUbNrcXYa6QndV0GTpUwqDhjNEpUzbQ9aUKaj2U/edit#gid=0) group problems that have similar solution patterns together, like [Neetcode mentions in his video](https://youtu.be/SVvr3ZjtjI8?si=K5zkXYLz70Mh-8Dh&t=270), DP problems have similar patterns, multiple tree problems use (recursive) BFS, etc.  
   
 Also, just had this feeling that DFS is similar in spirit to pre-order traversal, [which is indeed true](https://softwareengineering.stackexchange.com/questions/227779/is-pre-order-traversal-same-as-depth-first-search), just that "traversal" and "search" have different purposes.
+
+#### 5th September
+/Python: It's entirely possible to compared nested lists / tuples with the `==` operator. As below example
+```python3
+[('root', None), ('left', 3)] == [('root', None), ('left', 3)] # returns True
+```
