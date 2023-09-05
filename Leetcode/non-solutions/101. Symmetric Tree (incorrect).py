@@ -45,3 +45,4 @@ class Solution:
         return self.left_inorder == self.right_inorder[::-1]
 
         # I was explaining this issue to Ara and was rubber ducky-ing the approach of passing in some additional information besides just the values of the nodes for comparison and she suggested recording whether a Node is a "left" or "right" child along with the value which indeed works! just isn't a very elegant solution
+        # It's in Leetcode/101. Symmetric Tree (initial inelegant solution).py
