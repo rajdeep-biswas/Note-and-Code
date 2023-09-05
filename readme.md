@@ -66,3 +66,5 @@ Also, just had this feeling that DFS is similar in spirit to pre-order traversal
 ```python3
 [('root', None), ('left', 3)] == [('root', None), ('left', 3)] # returns True
 ```
+  
+/DSA: If the recursive solutions to trees are not making intuitive sense, to convert them into iterative solutions, the idea is that they will need a stack (if the solution is DFS) or they will need a queue (if the solution is BFS).
