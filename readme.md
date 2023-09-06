@@ -68,3 +68,6 @@ Also, just had this feeling that DFS is similar in spirit to pre-order traversal
 ```
   
 /DSA: If the recursive solutions to trees are not making intuitive sense, to convert them into iterative solutions, the idea is that they will need a stack (if the solution is DFS) or they will need a queue (if the solution is BFS).
+
+#### 6th September
+/DSA: In-order traversal is how you get elements out of a BST in sorted-order.
