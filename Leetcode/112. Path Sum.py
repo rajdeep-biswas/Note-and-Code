@@ -19,7 +19,7 @@ class Solution:
         if not node.left and not node.right:
             self.path_sums.add(path_sum + node.val)
 
-        # recurse left and right. *no need to return anything since our if condition is adding into a member variable, that's all the information we need
+        # recurse left and right. *no need to return anything since our if condition is adding into a member variable, that's all the information we need. and it is indeed crucial not to return anything; think about it, if we return the first call to the left subtree (without it being inside an if condition), line 24 becomes dead code. it's all making sense!
         self.findPathSums(node.left, path_sum + node.val)
         self.findPathSums(node.right, path_sum + node.val)
 
@@ -29,6 +29,5 @@ class Solution:
 
         self.path_sums = set()
         self.findPathSums(root, 0)
-        print(self.path_sums)
 
         return targetSum in self.path_sums
