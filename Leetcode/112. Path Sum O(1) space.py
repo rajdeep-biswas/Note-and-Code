@@ -15,7 +15,6 @@ class Solution:
             return
 
         if not node.left and not node.right:
-            print(path_sum + node.val)
             if path_sum + node.val == targetSum:
                 return True
 
