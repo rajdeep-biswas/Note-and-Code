@@ -23,6 +23,7 @@ class Solution:
         self.diameter = max(self.diameter, left_diam + right_diam)
 
         # the purpose of this is to populate the variables so that we can update the diameter variable
+        # it may appear that this should work by itself (since in some cases both the final value of diameter and the final return value may be the same) but actually, this in itself will finally just return the max depth of the tree (remember 104?) we are just using this functionality to keep track of the max diameter encountered so far. (I mean this does seem a bit hacky but it is indeed O(n))
         return 1 + max(left_diam, right_diam)
 
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
