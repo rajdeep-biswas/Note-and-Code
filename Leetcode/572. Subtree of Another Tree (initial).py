@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
 
-    # my initial brute force solution i.e O(n + m + n ^ 2) where n is the main tree and m is the sub-tree
+    # my initial brute force solution O(n^2) (it simplifies from O(n + m + n ^ 2)) where n is the main tree and m is the sub-tree
     mainTrav = []
     subTrav = []
     rootfinds = []
