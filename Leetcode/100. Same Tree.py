@@ -17,6 +17,7 @@ class Solution:
             return True
 
         # base case 2: if only one of the corresponding Nodes is None, that is not same tree
+        # note that this also takes care of the edge case explained in Leetcode/non-solutions/101. Symmetric Tree (incorrect).py
         if not root_one or not root_two:
             return False
 
