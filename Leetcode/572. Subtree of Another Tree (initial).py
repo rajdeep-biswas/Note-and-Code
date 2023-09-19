@@ -15,6 +15,7 @@ class Solution:
     subRoot = [1,2,2,2,null,null,2]
 
     So this isn't really a "solution", but since leetcode accepts it, I will leave it in this folder instead of non-solutions.
+    And an actual solution (with aid from 100), is in Leetcode/572. Subtree of Another Tree (improvement one).py
     """
 
     mainTrav = []
