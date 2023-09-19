@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    
+
+    # while this is the same time complexity as Leetcode/572. Subtree of Another Tree (improvement one).py, it is O(1) space
     # the whole solution that is Leetcode/100. Same Tree.py
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
 
