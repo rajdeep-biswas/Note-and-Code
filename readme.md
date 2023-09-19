@@ -73,7 +73,8 @@ Also, just had this feeling that DFS is similar in spirit to pre-order traversal
 /DSA: In-order traversal is how you get elements out of a BST in sorted-order.
 
 #### 19th September
-/DSA: Especially in the context of trees, I need to remember / learn patterns. For example, I had solved `100. Same Tree` back on 5th September, but by 19th Sept, when I was attemping `572. Subtree of Another Tree`, I entirely forgot that implementation and went back to my default "compare in-order traversals to check if they're equal" approach.
+/DSA: Especially in the context of trees, I need to remember / learn patterns. For example, I had solved `100. Same Tree` back on 5th September, but by 19th Sept, when I was attemping `572. Subtree of Another Tree`, I entirely forgot that implementation and went back to my default "compare in-order traversals to check if they're equal" approach.  
+
 Also, turns out, if I add my own test case of inputs to #573 on leetcode (which is actually inspired by a corner case on #100) -
 ```shell
 root = [3,1,5,2,2,null,2,2,null,2]
