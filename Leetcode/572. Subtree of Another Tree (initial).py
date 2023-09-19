@@ -6,7 +6,17 @@
 #         self.right = right
 class Solution:
 
-    # my initial brute force solution O(n^2) (it simplifies from O(n + m + n ^ 2)) where n is the main tree and m is the sub-tree
+    """
+    my initial brute force solution O(n^2) (it simplifies from O(n + m + n ^ 2)) where n is the main tree and m is the sub-tree
+
+    Interesting to note while this solution _will_ get accepted as a submission on leetcode, it fails a corner case inspired by #100.
+    Try the following custom test case -
+    root = [3,1,5,2,2,null,2,2,null,2]
+    subRoot = [1,2,2,2,null,null,2]
+
+    So this isn't really a "solution", but since leetcode accepts it, I will leave it in this folder instead of non-solutions.
+    """
+
     mainTrav = []
     subTrav = []
     rootfinds = []
