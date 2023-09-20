@@ -8,6 +8,7 @@ class Solution:
 
     # I found this solution submitted on March 13th (~190 days ago)
     # TODO: look at more efficient (and elegant) solutions. starting from neetcode.
+    # Update: lol guess what rhymes with Level Order Traversal? Answer: Breadth First Search. As soon as I heard those syllables come out of Neetcode's mouth, I instantly felt stupid and smart at the same time.
 
     height = 0
     levelOrderTrav = []
