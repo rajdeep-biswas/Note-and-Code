@@ -6,7 +6,8 @@
 #         self.right = right
 class Solution:
 
-    # I found this solution submitted on March 13th (~190 days ago) 
+    # I found this solution submitted on March 13th (~190 days ago)
+    # TODO: look at more efficient (and elegant) solutions. starting from neetcode.
 
     height = 0
     levelOrderTrav = []
