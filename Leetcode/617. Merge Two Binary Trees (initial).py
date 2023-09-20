@@ -6,7 +6,8 @@
 #         self.right = right
 class Solution:
 
-    # O(n) solution where I use dual-root DFS methods. I need two methods because doing it in the same method results in incorrectly summing nodes to itself *after* merging them (which should be just merged and not summed again)
+    # O(n) time solution where I use dual-root DFS methods. I need two methods because doing it in the same method results in incorrectly summing nodes to itself *after* merging them (which should be just merged and not summed again)
+    # TODO: i was looking at neetcode's solution and realized the problem spec actually asks you to do the merging into a new tree and not in-place. i am a bit too tired today so will dry run that later `Leetcode/617. Merge Two Binary Trees (improved).py` stays pending for now
 
     # recursively adds values as long as correspnding nodes exist, pretty intuitive
     def addValues(self, node1, node2):
