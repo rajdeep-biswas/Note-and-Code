@@ -7,7 +7,7 @@
 class Solution:
 
     # my one-shot solution based on intuition from problems like #543 (maybe? I dont even know which exact problem(s) helped in the exact intuition for this kind of recursion)
-    # I will look at neetcode's solution and see if it's an improvement
+    # TODO: I will look at neetcode's solution and see if it's an improvement. update: he somehow manages to do the final some within the "getNumbers" method itself AND without using any auxiliary space; too sleepy rn but will attempt to understand the solution afterwards.
 
     numbers = []
 
