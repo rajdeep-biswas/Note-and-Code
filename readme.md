@@ -81,3 +81,6 @@ root = [3,1,5,2,2,null,2,2,null,2]
 subRoot = [1,2,2,2,null,null,2]
 ```
 It will still get accepted as a submission but fail this custom testcase. That's hilarious and I am thinking of submitting this corner case.
+
+#### 21st September
+/Python: `collections.deque` is implemented as a doubly-linked list. Queue operations like popleft and append are efficient, with an average time complexity of O(1). On the other hand, I have been using `queue.insert(0, node)` to simulate a queue operation where elements are added at the beginning of the list, which has a time complexity of O(N) because it requires shifting all existing elements to make room for the new element.
