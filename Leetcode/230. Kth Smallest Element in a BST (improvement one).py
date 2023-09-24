@@ -25,7 +25,7 @@ class Solution:
         # note that k being 1-indexed works out just fine because we're incrementing it *before* the condition
         if self.count == k:
 
-            # this setting member variable is the least favorite part of mine of the code. it's pretty inelegant, I am gonna watch neetcode after this. update: I did check out neetcode's solution (youtube.com/watch?v=5LUXSvjmGCw) and he uses the iterative in-order approach with additional memory and worst case time complexity still remains O(n) so not really a fan of his solution. not gonna commit it to github
+            # this setting member variable is the least favorite part of mine of the code. it's pretty inelegant, I am gonna watch neetcode after this. update: I did check out neetcode's solution (youtube.com/watch?v=5LUXSvjmGCw) and he uses the iterative in-order approach with additional memory and worst case time complexity still remains O(n) so not really a fan of his solution. also, it's the exact same in spirit as mine; he increments a counter before a condition at the part of code between left and right traversal and returns if counter matches k. not gonna commit it to github
             self.kthsmallest = node.val
 
             # this return doesn't even improve performance besides skipping the right subtree of only the element we're looking for
