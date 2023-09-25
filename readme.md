@@ -84,3 +84,6 @@ It will still get accepted as a submission but fail this custom testcase. That's
 
 #### 21st September
 /Python: `collections.deque` is implemented as a doubly-linked list. Queue operations like popleft and append are efficient, with an average time complexity of O(1). On the other hand, I have been using `queue.insert(0, node)` to simulate a queue operation where elements are added at the beginning of the list, which has a time complexity of O(N) because it requires shifting all existing elements to make room for the new element.
+
+#### 25th September
+/Python: If you're updating a list variable with sublists via another variable, make sure to use `sublist.copy()` because if you directly use `mainlist.append(sublist)`, any subsequent modifications to the sublist will also reflect in previously appended sublists and the final main list will be just full of the final sublist. See `Leetcode/78. Subsets.py` for example.
