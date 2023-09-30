@@ -91,3 +91,6 @@ It will still get accepted as a submission but fail this custom testcase. That's
 #### 26th September
 /DSA: Iterative binary search becomes very, very intuitive as soon as you start thinking in a two-pointer visual approach and not just the numbers.  
 Also (this is a bit obvious but), it's important to set the condition to `while l <= r` and not `while l < r` since they might overlap at the last element that might be our answer.
+
+#### 30th September
+/DSA: Cleaner Boolean logic in python. `True if x else y` can be rewritten as `x or y`.
