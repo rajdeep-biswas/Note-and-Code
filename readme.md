@@ -89,4 +89,5 @@ It will still get accepted as a submission but fail this custom testcase. That's
 /Python: If you're updating a list variable with sublists via another variable, make sure to use `sublist.copy()` because if you directly use `mainlist.append(sublist)`, any subsequent modifications to the sublist will also reflect in previously appended sublists and the final main list will be just full of the final sublist. See `Leetcode/78. Subsets.py` for example.
 
 #### 26th September
-/DSA: Iterative binary search becomes very, very intuitive as soon as you start thinking in a two-pointer visual approach and not just the numbers.
+/DSA: Iterative binary search becomes very, very intuitive as soon as you start thinking in a two-pointer visual approach and not just the numbers.  
+Also (this is a bit obvious but), it's important to set the condition to `while l <= r` and not `while l < r` since they might overlap at the last element that might be our answer.
