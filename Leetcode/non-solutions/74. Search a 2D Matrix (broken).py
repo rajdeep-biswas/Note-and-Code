@@ -1,6 +1,7 @@
 class Solution:
 
     # pretty sure this is a suboptimal solution which I took the inspiration from neetcode but he does it much better
+    # 4 / 133 testcases passed. it even fails [[1]], I am really confused why I committed this
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         row_top = 0
         row_bot = len(matrix)
