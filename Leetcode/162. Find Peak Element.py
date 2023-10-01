@@ -5,6 +5,8 @@ class Solution:
         # this is a trash problem because we don't really need to return the highest existing peak but any peak at all that we find first
         # take the custom testcase [10,2,1,3,5,6,4]
 
+        # btw Neetcode has a shorter solution (youtube.com/watch?v=kMzJy9es7Hc), mainly he has done quicker boolean logic but logically both our codes are doing the same thing - I ran it by chatgpt.
+
         l, r = 0, len(nums) - 1
 
         while l <= r:
