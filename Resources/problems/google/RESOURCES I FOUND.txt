@@ -1,0 +1,18 @@
+For the meeting rooms problem (by simply google searching the text) -
+"there are n rooms labeled from 0 to n - 1. you are given appointment start time and udration for a set of customers. sorted by start times (non-decreasing order) each customer is assigned to the first available room with the loest index. a room can only have a1 customer at a time. if room is not available at the start time of the customer they should wait till one becomes avaialble goal list the rooms numbers which had the maximum appointmnets booked after all customers ahave gone through their appointments"
+
+https://leetcode.com/discuss/interview-question/1566515/GoogleorOnsiteorBusiest-meeting-room/1143254
+
+https://leetcode.com/discuss/interview-question/1529541/faang-interview-question
+
+https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/
+
+https://dev.to/seanpgallivan/solution-keys-and-rooms-33oh
+
+https://www.codingninjas.com/studio/library/find-maximum-meetings-in-one-room
+
+https://www.codingninjas.com/studio/library/find-maximum-meetings-in-one-room
+
+Neetcode has these two related problems under Backtracking -
+https://leetcode.com/problems/meeting-rooms/
+https://leetcode.com/problems/meeting-rooms-ii/
