@@ -1,0 +1,42 @@
+Sourced from /Users/I516992/Documents/Misc/readyly.ipynb.
+
+Q1.
+Given a list of integers, return the largest product that can be made by multiplying any three integers. Function Signature: Copy code def maximum_product(nums: List[int]) -> int: pass Input: nums : a list of n (3 <= n <= 10^5) integers nums[i] (-10^5 <= nums[i] <= 10^5) Output: return an integer , the maximum product that can be made by multiplying any three integers. Example: assert maximum_product([-10, -10, 5, 2]) == 500 assert maximum_product([1, 2, 3, 4]) == 24 assert maximum_product([-1, -2, -3, -4]) == -6
+
+With some googling, this is Leetcode 152. Maximum Product Subarray (Medium)
+A 1D Dynamic Programming problem, too, according to Neetcode's list. It's on Blind75 too!
+
+Leetcode: https://leetcode.com/problems/maximum-product-subarray/description/.
+Neetcode: https://www.youtube.com/watch?v=lXVy6YWFcRM.
+
+
+Q2.
+Given a list of words and a string pattern, return a list of all words in the list that matches the pattern. words = ['apple', ‘aaple’,'banana', 'cherry', 'date', 'grape', 'lemon', ‘ample’,’maple’] pattern = a?ple # should match 'apple', ‘aaple’ and 'ample' // ^a.ple 𝑃𝑎𝑡𝑡𝑒𝑟𝑛∗𝑎∗𝑝𝑙𝑒−>𝑎𝑝𝑝𝑙𝑒,𝑎𝑎𝑝𝑙𝑒,𝑚𝑎𝑝𝑙𝑒,𝑎𝑚𝑝𝑙𝑒=>“.∗𝑎.∗𝑝𝑙𝑒
+ ” Pattern ape -> apple, aaple, maple, ample and grape => “^.a.p.e$”
+
+Leetcode: https://leetcode.com/problems/find-and-replace-pattern/description/.
+Dev.to (what I found from google search): https://dev.to/seanpgallivan/solution-find-and-replace-pattern-2hm
+
+
+Q3.
+Write a function to crush candy in one dimensional board. In candy crushing games, groups of like items are removed from the board. In this problem, any sequence of 3 or more like items should be removed and any items adjacent to that sequence should now be considered adjacent to each other. This process should be repeated as many time as possible. You should greedily remove characters from left to right. Example 1: Input: "aaabbbc" Output: "c" Explanation:
+
+Remove 3 'a': "aaabbbbc" => "bbbbc"
+Remove 4 'b': "bbbbc" => "c"
+Example 2: Input: "aabbbacd" Output: "cd" Explanation:
+
+Remove 3 'b': "aabbbacd" => "aaacd"
+Remove 3 'a': "aaacd" => "cd"
+Example 3: Input: "aabbccddeeedcba" Output: "" Explanation:
+
+Remove 3 'e': "aabbccddeeedcba" => "aabbccdddcba"
+Remove 3 'd': "aabbccdddcba" => "aabbcccba"
+Remove 3 'c': "aabbcccba" => "aabbba"
+Remove 3 'b': "aabbba" => "aaa"
+Remove 3 'a': "aaa" => ""
+Example 4: Input: "aaabbbacd" Output: "acd" Explanation:
+
+Remove 3 'a': "aaabbbac
+
+
+LC Discuss: https://leetcode.com/discuss/interview-question/380650/Bloomberg-or-Phone-or-Candy-Crush-1D/794734
