@@ -34,7 +34,7 @@ class Solution:
                     else:
                         r = m_col - 1
                 
-                # this makes sure it stays at O(log n + log m) and not O(log n * log m)
+                # while removing this return will still keep the code at O(log n + log m) but it does speed up the solution a bit by skipping redundant outer iterations
                 return False
             
             # if not we go to higher or lower row depending upon whether the target is larger than the last element of the middle row
