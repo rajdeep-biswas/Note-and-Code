@@ -18,7 +18,7 @@ class Solution:
             elif nums[i] == 2:
                 nums[i], nums[right] = nums[right], nums[i]
                 right -= 1
-                i -= 1
+                i -= 1 # without this, testcases like [1, 2, 0] will fail because i surpasses right after the first swap [1 0 2] and the (1, 0) never get compared
             
             i += 1
 
@@ -37,5 +37,5 @@ class Solution:
         Else if the index in the array is equal to 2, we swap that with our current high index and decrement the high index, since everything to right of the high index is sorted. Also take care in this case to decrement i since we will want to reconsider the inserted element.
 
         We've accounted for if the indexes are 0 or 2, the only other option is if the index is a 1, in which case we will just leave it in place.
-        
+
         """
