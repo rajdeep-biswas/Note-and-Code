@@ -18,7 +18,7 @@ class Solution:
             elif nums[i] == 2:
                 nums[i], nums[right] = nums[right], nums[i]
                 right -= 1
-                i -= 1 # without this, testcases like [1, 2, 0] will fail because i surpasses right after the first swap [1 0 2] and the (1, 0) never get compared
+                i -= 1 # without this, testcases like [1, 2, 0] will fail because i surpasses right after the first swap [1 0 2] and the (1, 0) never get compared; it needs a step back to make sure the 0 it left in the middle has been addressed
             
             i += 1
 
