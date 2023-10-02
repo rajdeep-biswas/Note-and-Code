@@ -2,6 +2,7 @@ class Solution:
     def findMin(self, nums: List[int]) -> int:
 
         # inspired from neetcode (youtube.com/watch?v=nIVW4P8b1VA)
+        # his solution is also inelegant in its own way so i am happy with my solution for now
         # edge case of array size being 1 (this is the only inelegant part of the code I personally don't like)
         if len(nums) == 1:
             return nums[0]
