@@ -10,7 +10,7 @@ class Solution:
             if nums[i] != val:
 
                 # swap out any other element with val
-                nums[i], nums[k] = nums[k], nums[i]
+                nums[i], nums[k] = nums[k], nums[i] # note that the swapping isn't even needed. if i just ass k value to i, it doesn't matter what remains at the end of the array
 
                 # once array has no val until k element, push k to the right
                 k += 1
