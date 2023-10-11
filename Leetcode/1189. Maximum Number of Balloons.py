@@ -13,5 +13,5 @@ class Solution:
             if l in balloon_dict:
                 balloon_dict[l] += 1
         
-        # this is the only big brain part
+        # this is the only big brain part, is also O(1) btw, think about it
         return min(balloon_dict.values())
