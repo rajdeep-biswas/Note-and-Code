@@ -3,6 +3,7 @@ class Solution:
     # chatGPT suggested iterative approach
 
     # we need to initialize some "base cases" into the cache. there's only one way to climb a staircase of length 0 - "to not climb it"
+    # update: this problem statement is a really overcomplicated way to spell "Fibonacci"
     cache = {0: 1, 1: 1}
 
     def climbStairs(self, n: int) -> int:
