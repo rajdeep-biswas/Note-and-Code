@@ -94,3 +94,6 @@ Also (this is a bit obvious but), it's important to set the condition to `while 
 
 #### 30th September
 /DSA: Cleaner Boolean logic in python. `True if x else y` can be rewritten as `x or y`.
+
+#### 15th November
+/DSA: Leetcode 70. Climbing Stairs is just Fibonacci. [As discussed here](https://medium.com/analytics-vidhya/climbing-the-fibonacci-sequence-d2066b0b20aa).
