@@ -27,6 +27,4 @@ class Solution:
         # (1) we pass in n - 1 and not n since it's 0-based indexing
         result = self.reverseFib(n - 1, 0)
 
-        print(self.cache)
-
         return result
