@@ -97,3 +97,6 @@ Also (this is a bit obvious but), it's important to set the condition to `while 
 
 #### 15th November
 /DSA: Leetcode 70. Climbing Stairs is just Fibonacci. [As discussed here](https://dev.to/alisabaj/the-climbing-staircase-problem-how-to-solve-it-and-why-the-fibonacci-numbers-are-relevant-3c4o).
+
+#### 16th November
+/DSA / Leetcode: Using a member variable cache can help in boosting performance further because it is going to be used across testcases. 🤯
