@@ -1,6 +1,9 @@
 class Solution:
 
-    # trying a "reverse fibonacci" approach, as seen on this Babbar video (youtube.com/watch?v=S31W3kohFDk)
+    # trying a "reverse fibonacci" approach, from the intuition from this Babbar video (youtube.com/watch?v=S31W3kohFDk); he doesn't show the code
+    # using the code in Leetcode/509. Fibonacci Number (cached).py 1:1 will work just fine, I just tried to do a more "climbing staircase"-analogous solution by going from 0 to nth
+    # the caching mechanism isn't very intuitive in this one, and works in a reversed way - cache[0] will have the final answer, also -
+    # it's kinda very inefficient compared to the standard approach - takes way more total calls (although number of cache hits also increase when n is large but that's like a solution to a problem that it itself has created)
 
     cache = {}
 
