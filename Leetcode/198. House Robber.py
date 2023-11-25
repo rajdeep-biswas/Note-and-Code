@@ -6,13 +6,13 @@ class Solution:
         # just changing prev2 and prev1 to zero instead of 1st and 0th indices and changing line 12 like so is all it took to make it work for this problem. WTF? What is this sorcery?
         # and of course, line 18 doesn't need a max() anymore.
 
-        dontrobfirst = 0
         robfirst = 0
+        dontrobfirst = 0
 
         for i in range(len(nums)):
 
-            cur = max(nums[i] + dontrobfirst, robfirst)
-            dontrobfirst = robfirst
-            robfirst = cur
+            cur = max(nums[i] + robfirst, dontrobfirst)
+            robfirst = dontrobfirst
+            dontrobfirst = cur
         
-        return robfirst
+        return dontrobfirst
