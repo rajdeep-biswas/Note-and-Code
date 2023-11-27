@@ -1,16 +1,14 @@
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
 
-        # solution inspired by Babbar's solve3() youtube.com/watch?v=S31W3kohFDk
-        # this is probably where Neetcode's solution was coming from (except he goes the extra step of not even using two extra variables but overwriting values into the input array. absolute madlad)
-        
-        prev2 = cost[0]
-        prev1 = cost[1]
+        # very much the same intuition I gained from Leetcode/198. House Robber.py, 
+        cost1, cost2 = cost[0], cost[1]
 
-        for i in range(2, len(cost)):
+        # just wrote this medium article. https://medium.com/@rajdeepbiswas/hitchhikers-guide-to-dynamic-programming-96afbd4f1c8a. it's 5pm, so left with not enough comments to describe the code here
+        for cost in cost[2:]:
 
-            cur = cost[i] + min(prev2, prev1)
-            prev2 = prev1
-            prev1 = cur
+            cur = min(cost1, cost2) + cost
+            cost1 = cost2
+            cost2 = cur
         
-        return min(prev2, prev1)
+        return min(cost1, cost2)
