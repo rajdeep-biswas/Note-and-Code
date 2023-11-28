@@ -51,4 +51,6 @@ class Solution:
         # iminus1th + nums[-1] is taking the last calculation into account since we haven't actually looked at that one
         return max(iminus1th + nums[-1], ith)
 
+        PS: Babbar's solution to a different problem is where I got the intuition from youtube.com/watch?v=m9-H6AUBLgY
+
         """
