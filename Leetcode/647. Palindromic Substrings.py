@@ -1,6 +1,7 @@
 class Solution:
 
     # pretty much the same solution as Leetcode/5. Longest Palindromic Substring.py
+    # also happy to announce that is the exact same (a bit more readable) solution as Neetcode's
 
     def countPalindromes(self, s, l, r):
         count = 0
