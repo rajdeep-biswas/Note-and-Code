@@ -19,7 +19,7 @@ class Solution:
             if i >= len(nums) - 1:
                 return True
 
-            # if current index value is zero (or has become less than zero because of line 24 from a previous iteration)
+            # if current index value is zero (or has become less than zero because of line 25 from a previous iteration)
             if nums[i] <= 0:
 
                 # we decrement it because we want to check if taking a smaller step would prevent us from landing at a zero
