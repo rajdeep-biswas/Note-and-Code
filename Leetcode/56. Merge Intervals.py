@@ -5,6 +5,7 @@ class Solution:
 
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
 
+        # the actual syntax to do this should be intervals.sort(key = lambda i : i[0])
         intervals = sorted(intervals)
         res = []
         last = intervals[0]
