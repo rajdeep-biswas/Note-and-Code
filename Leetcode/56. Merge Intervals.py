@@ -17,6 +17,7 @@ class Solution:
                 last = intervals[i]
         
             else:
+                # note that last = [last[0], max(last[1], intervals[i][1])] also works since we already know the beginning of the "last" interval MUST be smaller (or equal) since it has appeared first in a sorted list
                 last = [min(last[0], intervals[i][0]), max(last[1], intervals[i][1])]
         
         res.append(last)
