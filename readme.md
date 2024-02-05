@@ -93,13 +93,13 @@ It will still get accepted as a submission but fail this custom testcase. That's
 Also (this is a bit obvious but), it's important to set the condition to `while l <= r` and not `while l < r` since they might overlap at the last element that might be our answer.
 
 #### 30th September
-/DSA: Cleaner Boolean logic in python. `True if x else y` can be rewritten as `x or y`.
+/Boolean /Python: Cleaner Boolean logic in python. `True if x else y` can be rewritten as `x or y`.
 
 #### 15th November
 /DSA: Leetcode 70. Climbing Stairs is just Fibonacci. [As discussed here](https://dev.to/alisabaj/the-climbing-staircase-problem-how-to-solve-it-and-why-the-fibonacci-numbers-are-relevant-3c4o).
 
 #### 16th November
-/DSA / Leetcode: Using a member variable cache can help in boosting performance further because it is going to be used across testcases. 🤯
+/DSA /Leetcode: Using a member variable cache can help in boosting performance further because it is going to be used across testcases. 🤯
 PS: the very thing that used to cause problems and had to be manually reset is helping here.
 
 #### 5th Feb
