@@ -104,3 +104,4 @@ PS: the very thing that used to cause problems and had to be manually reset is h
 
 #### 5th Feb
 /Python: Syntax for sorting based on sublist index with lambda function `intervals.sort(key=lambda pair: pair[0])`.
+If it's confusing, [here's a good explanation](https://www.freecodecamp.org/news/lambda-sort-list-in-python/).
