@@ -105,3 +105,6 @@ PS: the very thing that used to cause problems and had to be manually reset is h
 #### 5th Feb
 /Python: Syntax for sorting based on sublist index with lambda function `intervals.sort(key=lambda pair: pair[0])`.
 If it's confusing, [here's a good explanation](https://www.freecodecamp.org/news/lambda-sort-list-in-python/).
+
+#### 10th Feb
+/Python: `import heapq` to use python's implementation of Min Heap. Python does not have a Max Heap implementation, but [there is a hacky workaround](https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python).  
