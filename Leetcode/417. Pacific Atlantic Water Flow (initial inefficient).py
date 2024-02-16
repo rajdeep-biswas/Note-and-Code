@@ -44,6 +44,8 @@ class Solution:
                             stack.append([heights[r_prime][c_prime], r_prime, c_prime])
                             # path.append([r_prime, c_prime])
         
+
+        # this is the most inelegant part of the code but I managed to significantly improve with Leetcode/417. Pacific Atlantic Water Flow (improvement 1).py
         results = []
         for item in list(set(res)):
             results.append(item)
