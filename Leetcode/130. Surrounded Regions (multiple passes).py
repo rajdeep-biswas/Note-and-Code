@@ -13,6 +13,9 @@ class Solution:
         # after this is done, we convert all survivor Os to Xs because they're the elligible ones (for the lack of a better word)
         # after that is done, we convert all Ps back to Os now that their job is done
         # good news is 114ms sounds like fantastic runtime, as well, it managed to beat 88% users 
+
+        # UPDATE: HOLY SHIT NEETCODE HAS DONE THE EXACT SAME APPROACH OF FLAGGING Os TO SOMETHING ELSE
+        # he just has done the flagging part very elegantly, he's smushed my first two for loops AND the DFS into a single recursive method
         
         # edge passes to replace boundary 'O's with placeholders
         rowlen, collen = len(board), len(board[0])
