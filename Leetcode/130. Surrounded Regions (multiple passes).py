@@ -15,7 +15,8 @@ class Solution:
         # good news is 114ms sounds like fantastic runtime, as well, it managed to beat 88% users 
 
         # UPDATE: HOLY SHIT NEETCODE HAS DONE THE EXACT SAME APPROACH OF FLAGGING Os TO SOMETHING ELSE
-        # he just has done the flagging part very elegantly, he's smushed my first two for loops AND the DFS into a single recursive method
+        # he just has done the flagging part slightly more elegantly, he's smushed my first two for loops AND the DFS into one nested loop and one recursive method
+        # my solution isn't that much worse off compared to this
         
         # edge passes to replace boundary 'O's with placeholders
         rowlen, collen = len(board), len(board[0])
