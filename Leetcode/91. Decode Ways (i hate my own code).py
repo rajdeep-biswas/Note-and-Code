@@ -14,7 +14,7 @@ class Solution:
         if i in self.cache:
             return self.cache[i]
 
-        # if i is in bounds, and we find a standalone '0', there will be no value from it. it entirely depends on its predecessor character which is taken care of at the 
+        # if i is in bounds, and we find a standalone '0', there will be no value from it. it entirely depends on its predecessor character which is taken care of at the line 31 condition
         if i < len(s) and s[i] == '0':
             return 0
 
