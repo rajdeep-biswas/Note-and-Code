@@ -17,6 +17,8 @@ Given a list of words and a string pattern, return a list of all words in the li
 Leetcode: https://leetcode.com/problems/find-and-replace-pattern/description/.
 Dev.to (what I found from google search): https://dev.to/seanpgallivan/solution-find-and-replace-pattern-2hm
 
+Closer leetcode I found much later: https://leetcode.com/problems/wildcard-matching/description/
+
 
 Q3.
 Write a function to crush candy in one dimensional board. In candy crushing games, groups of like items are removed from the board. In this problem, any sequence of 3 or more like items should be removed and any items adjacent to that sequence should now be considered adjacent to each other. This process should be repeated as many time as possible. You should greedily remove characters from left to right. Example 1: Input: "aaabbbc" Output: "c" Explanation:
