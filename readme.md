@@ -108,3 +108,16 @@ If it's confusing, [here's a good explanation](https://www.freecodecamp.org/news
 
 #### 10th Feb
 /Python: `import heapq` to use python's implementation of Min Heap. Python does not have a Max Heap implementation, but [there is a hacky workaround](https://stackoverflow.com/questions/2501457/what-do-i-use-for-a-max-heap-implementation-in-python).  
+
+#### 2nd May
+/Python: Using a custom comparison method for sorting
+```python3
+def compare(self, n1, n2):
+    if n1 + n2 > n2 + n1:
+        return -1
+    else:
+        return 1
+
+nums = sorted(nums, key = cmp_to_key(self.compare))
+```
+This one is specific to [179. Largest Number](https://leetcode.com/problems/largest-number/description/).
