@@ -19,6 +19,7 @@ class Solution:
             m = (l + r) // 2
 
             # if the element to the right of middle is greater than the middle, we have found our "pivot" and hence our answer
+            # note: this implementation is much more indexing friendly than doing nums[m] < nums[m - 1]. this can cause infinite loop in testcases lile [2, 1]
             if nums[m + 1] < nums[m]:
                 return nums[m + 1]
             
