@@ -1,0 +1,75 @@
+HHH
+HHT
+HTH
+HTT
+THH
+TTH
+THT
+TTT
+
+
+Problem: input: numerical data
+Objective: train a regression model
+
+Step 1 EDA
+
+What the nature of the numerical columns?
+How many of them are categorical?
+“ continuous?
+Range of each?
+
+Gather as much SME on each column
+Derive meaningful features out of them
+	Might require feature engineering
+
+Stats of data
+	Central tendencies
+	Distributions
+	Outliers
+
+Visualizations
+	
+
+Result: we know what our data looks like.
+
+| Assumption: no non-numeric columns exist, if they do, we won’t use them
+
+Step 2 Model Building
+
+Independent / dependent variables going by usecase
+
+(X, y)
+
+Understand the nature of growth of y
+	Simple linear function
+	Polynomial function
+	More nuanced seasonality and trend
+
+Choose model according to nature of data
+
+
+Data collection (balanced dataset is available) -> EDA taken care of
+Base model is available
+Finetuning / training model done
+
+W&B -> pickle file
+
+Create a python application (Django)
+This hosts the inferencing model endpoint
+Dockerized and includes the pickle model file
+
+Docker file needs to be hosted at hyperscaler
+
+classifiers M1 and M2
+choose best model
+
+
+def mean(arr):
+	return sum(arr) / len(arr)
+
+def median(arr):
+	arr.sort()
+	if not len(arr) % 2:
+		return (arr[len(arr) // 2] + arr[len(arr) // 2 + 1]) / 2
+	else:
+		return arr[len(arr) // 2]
