@@ -1,4 +1,5 @@
 # i actually solved this pas midnight of Nov 21 (i.e. Nov 22). check personal logs if interested in the backstory
+# solution comparison: https://chatgpt.com/c/6920b218-1088-8324-af9e-3d1438802bf2 (jellybean account)
 
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
