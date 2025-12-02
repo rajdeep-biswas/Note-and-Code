@@ -1,3 +1,5 @@
+# i actually solved this pas midnight of Nov 21 (i.e. Nov 22). check personal logs if interested in the backstory
+
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         # every even row (index) has extra spaces
